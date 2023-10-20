@@ -52,7 +52,7 @@
             </div>
 
             <div class="navbar-brand">
-                <a href="index.html"><img src="../assets/images/logo.svg" alt="Lucid Logo" class="img-responsive logo"></a>
+                <a href="index.html"><img src="{{ asset('backend/assets/images/logo-white.svg')}}" alt="Lucid Logo" class="img-responsive logo"></a>
             </div>
 
             <div class="navbar-right">
