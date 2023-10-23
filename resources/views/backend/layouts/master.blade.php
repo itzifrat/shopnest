@@ -19,6 +19,9 @@
 <link rel="stylesheet" href="{{ asset('backend/assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('backend/assets/vendor/morrisjs/morris.min.css') }}" />
 
+<link rel="stylesheet" href="{{ asset('backend/assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css') }}">
+
+
 
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="{{ asset('backend/assets/css/main.css') }}">
@@ -32,7 +35,7 @@
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="{{asset('backend/assets/images/loader.gif') }}" width="58" height="58" alt="Shopnest"></div>
+        <div class="m-t-30"><img src="{{asset('backend/assets/images/loader.gif') }}" width="66" height="66" alt="Shopnest"></div>
         <p>Please wait...</p>
     </div>
 </div>
@@ -229,8 +232,8 @@
 
                             <li><a href="javascript:void(0);" class="has-arrow"><i class="icon-control-pause"></i><span>Banner</span> </a>
                                 <ul>
-                                    <li><a href="departments.html">All Departments</a></li>
-                                    <li><a href="add-departments.html">Add Departments</a></li>
+                                    <li><a href="{{ route('banner.index') }}">All Banners</a></li>
+                                    <li><a href="{{ route('banner.create') }}">Add Banner</a></li>
                                 </ul>
                             </li>
 
@@ -817,6 +820,24 @@
 <script src="{{ asset('backend/assets/bundles/knob.bundle.js') }}"></script>
 <script src="{{ asset('backend/assets/bundles/mainscripts.bundle.js') }}"></script>
 <script src="{{ asset('backend/assets/js/pages/ui/sortable-nestable.js') }}"></script>
+<!-- Jquery DataTable Plugin Js -->
+<script src="{{ asset('backend/assets/bundles/datatablescripts.bundle.js') }}"></script>
+<script src="{{ asset('backend/assets/js/pages/tables/jquery-datatable.js') }}"></script>
 <script src="{{ asset('backend/assets/js/index.js') }}"></script>
+
+
+
+<script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
+ <script>
+ $('#lfm').filemanager('image');
+  </script>
+
+<!--<script>
+    $('#description').summernote({
+      placeholder: 'Hello Bootstrap 5',
+      tabsize: 2,
+      height: 100
+    });
+  </script> -->
 </body>
 </html>

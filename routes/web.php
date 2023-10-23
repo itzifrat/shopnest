@@ -32,11 +32,22 @@
     Route::get('/home',[App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-
+//For Admin Dashboard:
 
     Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
 
         Route::get('/', [\App\Http\Controllers\AdminController::class, 'admin'])->name('admin');
+
+
+//Banner Sections
+
+ Route::resource('/banner',\App\Http\Controllers\BannerControler::class);
+
+
+
+
+
+
     });
 
 
