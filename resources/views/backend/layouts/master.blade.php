@@ -89,7 +89,7 @@
                                     <a href="javascript:void(0);">
                                         <div class="media">
                                             <div class="media-left">
-                                                <i class="icon-info text-warning"></i>
+                                          <i class="icon-info text-warning"></i>
                                             </div>
                                             <div class="media-body">
                                                 <p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>

@@ -43,6 +43,7 @@
 
  Route::resource('/banner',\App\Http\Controllers\BannerControler::class);
 
+//catagory
 
 
 
