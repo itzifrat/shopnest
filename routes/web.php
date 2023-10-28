@@ -23,7 +23,7 @@
     Route::get('/', function () {
 
 
-        return view('Welcome');
+    return view('Welcome');
     });
 
 
